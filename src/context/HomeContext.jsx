@@ -24,7 +24,7 @@ const HomeProvider = ({ children }) => {
           },
         });
         const json = await res.json();
-        setMovieItems(json.results.slice(8, 14));
+        setMovieItems(json.results.slice(8, 15));
       } catch (err) {
         alert(err)
       }

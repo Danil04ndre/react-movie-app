@@ -32,7 +32,7 @@ const HeroSlide = () => {
           grabCursor={true}
           spaceBetween={0}
           slidesPerView={1}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 4000 }}
         >
           {movieItems.map((el, i) => (
             <SwiperSlide key={i}>
