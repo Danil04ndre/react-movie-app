@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+.footer {
+  background-image: url("../assets/bg-footer.jpg");
+  height: 320px;
+  background-size: cover;
+}
+.rgba {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: inherit;
+}
+.content-footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  align-items: center;
+  height: inherit;
+  column-gap: 3rem;
+}
+.content-footer a {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  cursor: default;
+}
+.content-footer h2 {
+  font-size: 2.5rem;
+  color: red;
+  cursor: default;
+}
+@media screen and (max-width: 1200px) {
+  .content-footer {
+    column-gap: 1rem;
+  }
+  .content-footer {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .content-footer a {
+    font-size: 0.9rem;
+  }
+  .content-footer h2 {
+    font-size: 2rem;
+  }
+  .content-footer {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 685px) {
+  .content-footer a {
+    font-size: 0.8rem;
+  }
+  .content-footer h2 {
+    font-size: 1.5rem;
+  }
+  .content-footer {
+    padding: 0 30px 30px 30px;
+  }
+  .footer {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .content-footer {
+    padding: 0 10px 30px 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content-footer a {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .content-footer h2 {
+    display: none;
+  }
+  .content-footer {
+    padding: 0 5px 40px 5px;
+  }
+  .footer {
+    height: 200px;
+  }
+}

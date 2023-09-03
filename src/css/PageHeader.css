@@ -1,0 +1,33 @@
+.page-header {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.page-header h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  text-shadow: 7px 4px 6px black;
+}
+@media screen and (max-width: 818px) {
+  .page-header h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-header {
+    height: 280px;
+  }
+  .page-header h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 435px){
+  .page-header {
+    height: 220px;
+  }
+}

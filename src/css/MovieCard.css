@@ -1,0 +1,84 @@
+.movie-card {
+  border-radius: 20px;
+  height: 310px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.rgba-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 150ms ease;
+  padding: 20px;
+}
+.p {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.movie-card i {
+  font-size: 4rem;
+  color: transparent;
+  text-align: center;
+  user-select: none;
+}
+.rgba-card:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rgba-card:hover i {
+  color: rgb(214, 24, 24);
+  text-shadow: 2px 2px 15px red;
+}
+
+@media screen and (max-width: 1200px) {
+  .movie-card i {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .movie-card {
+    border-radius: 25px;
+    height: 290px;
+  }
+  .movie-card i {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .movie-card {
+    border-radius: 20px;
+    height: 270px;
+  }
+  .movie-card i {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .movie-card {
+    height: 250px;
+  }
+  .p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .movie-card {
+    height: 215px;
+  }
+  .p {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .movie-card {
+    height: 200px;
+  }
+}

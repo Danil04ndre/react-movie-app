@@ -1,0 +1,128 @@
+.container-movies {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.section-movies {
+  margin: 50px 0;
+}
+.movies-info {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movies-info h3 {
+  font-size: 1.9rem;
+}
+.movies-info .btn {
+  display: block;
+  border: 2px solid white;
+  background: none;
+  padding: 3px 13px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+  text-align: end;
+}
+.movies-info .btn:hover {
+  background: white;
+  color: black;
+}
+.movie-list {
+  padding: 0 20px;
+}
+
+.movie-list .swiper-slide {
+  width: 17%;
+}
+.movie-list img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+@media screen and (max-width: 1200px) {
+  .movie-list .swiper-slide {
+    width: 21%;
+  }
+  .movies-info .btn {
+    padding: 3px 12px;
+    font-size: 1.1rem;
+  }
+  .movies-info h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .movie-list .swiper-slide {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .movie-list .swiper-slide {
+    width: 31%;
+  }
+  .movies-info .btn {
+    padding: 2px 11px;
+    font-size: 1rem;
+  }
+  .movies-info h3 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .movie-list .swiper-slide {
+    width: 36%;
+  }
+  .movies-info .btn {
+    padding: 2px 11px;
+    font-size: 1rem;
+  }
+  .movies-info h3 {
+    font-size: 1.7rem;
+  }
+  .movies-info {
+    padding: 20px 10px;
+  }
+  .movie-list {
+    padding: 0 10px;
+  }
+  .section-movies {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .movie-list .swiper-slide {
+    width: 41%;
+  }
+  .movies-info .btn {
+    padding: 2px 9px;
+    font-size: 0.9rem;
+  }
+  .movies-info h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .movie-list .swiper-slide {
+    width: 45%;
+  }
+  .movies-info .btn {
+    padding: 1px 7px;
+    font-size: 0.8rem;
+  }
+  .movies-info h3 {
+    font-size: 1.1rem;
+  }
+  .movies-info {
+    padding: 10px 15px;
+  }
+  .movie-list {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  transition: background-color 0.2s ease, padding 0.2s ease;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 40px;
+}
+.logo a {
+  font-size: 2.6rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  color: red;
+  outline: none;
+}
+
+.nav a {
+  margin-left: 50px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.active-link {
+  border-bottom: 3px solid red;
+}
+
+@media screen and (max-width: 900px) {
+  .header-container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .header-container {
+    justify-content: center;
+  }
+  .nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(12, 11, 11);
+  }
+  .nav a {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    height: 50px;
+  }
+  .logo a {
+    font-size: 2.3rem;
+  }
+  .nav a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-container {
+    height: 40px;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
+  .nav {
+    padding: 8px 0;
+  }
+  .nav a {
+    font-size: 1rem;
+  }
+  .active-link {
+    border-bottom: 2px solid red;
+  }
+}
